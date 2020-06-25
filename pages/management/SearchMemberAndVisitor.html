@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
   <meta name="author" content="Creative Tim">
-  <title>Argon Dashboard PRO - Premium Bootstrap 4 Admin Template</title>
+  <title>ICM</title>
   <!-- Favicon -->
   <link rel="icon" href="../../assets/img/brand/favicon.png" type="image/png">
   <!-- Fonts -->
@@ -431,29 +431,29 @@
                 <div class="form-group">
                 <label class="form-control-label" for="exampleFormControlSelect1">Search Key</label>
                 <select class="form-control" id="search-key" name="search-key">
-                    <option value="Afganistan">All Members</option>
-                    <option value="Albania">Member Name</option>
-                    <option value="Algeria">Membership ID</option>
-                    <option value="American Samoa">Father's Name</option>
-                    <option value="Andorra">Mother's Name</option>
-                    <option value="Angola">Gender</option>
-                    <option value="Anguilla">Marital Status/option>
-                    <option value="Antigua & Barbuda">Educational Status</option>
-                    <option value="Argentina">Employment Status</option>
-                    <option value="Armenia">Employment Type</option>
-                    <option value="Aruba">Born On Day ...</option>
-                    <option value="Australia">Born In Month</option>
-                    <option value="Austria">Born In Year</option>
-                    <option value="Azerbaijan">Age Range</option>
-                    <option value="Bahamas">Profession</option>
-                    <option value="Bahrain">Occupation</option>
-                    <option value="Bangladesh">Location</option>
-                    <option value="Barbados">Role / Position</option>
-                    <option value="Belarus">Married In Month</option>
-                    <option value="Belgium">Joined Church In Month</option>
-                    <option value="Belize">Members Of Group</option>
-                    <option value="Benin">Members Of Department</option>
-                    <option value="Bermuda">Members Of Fellowship</option>
+                    <option value="All Members">All Members</option>
+                    <option value="Member Name">Member Name</option>
+                    <option value="Membership ID">Membership ID</option>
+                    <option value="Father's Name">Father's Name</option>
+                    <option value="Mother's Name">Mother's Name</option>
+                    <option value="Gender">Gender</option>
+                    <option value="Marital Status">Marital Status/option>
+                    <option value="Educational Status">Educational Status</option>
+                    <option value="Educational Status">Employment Status</option>
+                    <option value="Employment Type">Employment Type</option>
+                    <option value="Born On Day">Born On Day ...</option>
+                    <option value="Born In Month">Born In Month</option>
+                    <option value="Born In Year">Born In Year</option>
+                    <option value="Age Range">Age Range</option>
+                    <option value="Profession">Profession</option>
+                    <option value="Occupation">Occupation</option>
+                    <option value="Location">Location</option>
+                    <option value="Role / Position">Role / Position</option>
+                    <option value="Married In Month">Married In Month</option>
+                    <option value="Joined Church In Month">Joined Church In Month</option>
+                    <option value="Members Of Group">Members Of Group</option>
+                    <option value="Department Members">Members Of Department</option>
+                    <option value="Members Of Fellowship">Members Of Fellowship</option>
                     </select>
                 </select>
            </div>
@@ -461,26 +461,87 @@
 
     <div class="col-md-4">
         <div class="form-group">
-          <label class="form-control-label" for="example3cols1Input">Search Value</label>
-          <input type="text" class="form-control" id="example3cols1Input" placeholder="Search Value">
+          <label class="form-control-label" for="SearchValue">Search Value</label>
+          <input type="text" class="form-control" name="search-value" id="search-value" placeholder="Search Value">
       </div>
     </div>
 
     <div class="col-md-4">
     <div class="form-group">
         <div class="custom-control custom-radio mb-3">
-                <input name="custom-radio-1" class="custom-control-input" id="customRadio6" type="checkbox">
-                <label class="custom-control-label" for="customRadio6">Active Members</label>
+                <input name="custom-radio-1" class="custom-control-input" name="activeMembers" id="activeMembers" type="checkbox" checked>
+                <label class="custom-control-label" for="ActiveMembers">Active Members</label>
               </div>
       </div>
     </div>
 
     <div class="col-md-12"> 
-    <button class="btn btn-primary col-md-12" type="submit">Search</button>
+    <button class="btn btn-primary col-md-12" name="searchSubmit" id="searchSubmit" type="submit">Search</button>
     </div>
+    </div>
+    
+    </div>
+  </div>
+
+  <div class="card mb-4">
+        <!-- Card body -->
+        <div class="card-body">
+          <!-- Form groups used in grid -->
+          <div class="row">
+            <div class="card-header">
+                <h3 class="mb-0">Table Details</h3>
+                <p class="text-sm mb-0">
+                  This is an exmaple of datatable using the well known datatables.net plugin. This is a minimal setup in order to get started fast.
+                </p>
+              </div>
+              <div class="col-lg-6 col-5 text-left">
+              <button class="btn btn-primary col-md-4">List Options</button>
+              <button class="btn btn-primary col-md-5">Print Member Form</button>
+            </div>
+              <div class="table-responsive py-4">
+                <table class="table table-flush" id="datatable-basic">
+                  <thead class="thead-light">
+                    <tr>
+                      <th>No.</th>
+                      <th>Full Name</th>
+                      <th>Membership ID</th>
+                      <th>Phone Number</th>
+                      <th>Email Address</th>
+                      <th>Resident Address</th>
+                      <th>Edit</th>
+                      <th>Delete</th>
+                    </tr>
+                  </thead>
+                  <tfoot>
+                    <tr>
+                      <th>No.</th>
+                      <th>Full Name</th>
+                      <th>Membership ID</th>
+                      <th>Phone Number</th>
+                      <th>Email Address</th>
+                      <th>Resident Address</th>
+                      <th>Edit</th>
+                      <th>Delete</th>
+                    </tr>
+                  </tfoot>
+                  <tbody>
+                    <tr>
+                      <td>No.</td>
+                      <td>Full Name</th>
+                      <td>Membership ID</td>
+                      <td>Phone Number</td>
+                      <td>Email Address</td>
+                      <td>Resident Address</td>
+                      <td>Edit</td>
+                      <td>Delete</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+          </div> 
 
     </div>
-    </div>
+  </div>
 
       <!-- Footer -->
       <footer class="footer pt-0">
