@@ -605,18 +605,35 @@
                       </div>
 
                       <div class="col-md-12">
-                        <div class="form-group">
-                          <label class="form-control-label">Purpose Of Visit</label>
-                          <input class="form-control" placeholder="End date" type="date" value="06/22/2018">
-                        </div>
-                      </div>
-
+                            <div class="form-group">
+                            <label class="form-control-label" for="PurposeOfVisit">Purpose Of Visit</label>
+                            <select class="form-control" id="purposeOfVisit" name="purposeOfVisit">
+                                <option value="justAVisit">Just A Visit</option>
+                                <option value="wantToBeAMember">Want To Be A Member</option>
+                                <option value="seekingPrayers">Seeking Prayers And Spiritual Guidance</option>
+                                <option value="desireToGrow">Desire To Grow And Know More About Jesus Christ</option>
+                                </select>
+                       </div>
+                </div>
                     <div class="col-md-12">
                         <div class="form-group">
                           <label class="form-control-label" for="example3cols1Input">Other Purpose Of Visit</label>
                           <input type="text" class="form-control" id="example3cols1Input" placeholder="Other Purpose Of Visit">
                       </div>
                     </div>
+
+                    <div class="col-md-12">
+                            <div class="form-group">
+                            <label class="form-control-label" for="visitorInvite">How Was Visitor Invited / Led Here</label>
+                            <select class="form-control" id="visitorInvite" name="visitorInvite">
+                                <option value="inviteByFriend">Invited By A Friend / Member</option>
+                                <option value="preaching">Preaching On TV / Radio / Internet</option>
+                                <option value="evangelism">Evangelism Message</option>
+                                <option value="spiritLed">Led By The Spirit</option>
+                                <option value="personalSearch">Personal Search</option>
+                                </select>
+                       </div>
+                </div>
 
                     <div class="col-md-12"> 
                         <button class="btn btn-primary col-md-12" type="submit">Save New Visitor</button>
