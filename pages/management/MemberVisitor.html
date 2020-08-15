@@ -917,8 +917,8 @@
 
             <div class="col-md-4">
               <div class="form-group">
-                <label for="date" class="form-control-label">Date</label>
-                <input class="form-control" type="date" value="2018-11-23" name="date" id="date">
+                <label for="dateOfMarriage" class="form-control-label">Date Of Marriage</label>
+                <input class="form-control" type="date" name="dateOfMarriage" id="dateOfMariage">
               </div>
             </div>
 
@@ -1132,7 +1132,7 @@
             </div>
           </div>
           
-            <button class="btn btn-primary col-md-12" name="addMember" id="addMember" type="submit">Add Member</button>
+            
           </form>
         </div>
       </div>
@@ -1238,9 +1238,29 @@
                 </div>
               </div>
             </div>
+
+             <div class="row">
+          <div class="col-md-4">
+            <div class="custom-control custom-checkbox mb-3">
+                  <input class="form-check-input" type="checkbox" name="memberActive" id="memberActive">
+                  <label class="form-check-label" for="ActiveMember">Member Is Active</label>
+                </div>
+          </div>
+
+          <div class="col-md-6">
+              <div class="form-group">
+                <label class="form-control-label" for="InactiveUser">Inactive Reason</label>
+                <input type="text" class="form-control" name="userInactive" id="userInactive" placeholder="Inactive For What Reason">
+              </div>
+            </div>
+
+            <button class="btn btn-primary col-md-12" name="addMember" id="addMember" type="submit">Add Member</button>
+
+
           
         </div>
       </div>
+    </div>
       <!-- Footer -->
       <footer class="footer pt-0">
         <div class="row align-items-center justify-content-lg-between">
