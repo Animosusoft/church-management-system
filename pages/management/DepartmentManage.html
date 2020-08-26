@@ -449,8 +449,59 @@
               </div>
             </div>
           </div>
+
+          <button class="btn btn-primary col-md-6" name="addDepartment" id="addDepartment" type="submit">Add Department</button>
+
            </div>
     </div>
+
+    <div class="card mb-4">
+        <!-- Basic Information Card header -->
+        <div class="card-header">
+          <h3 class="mb-0">Membership</h3>
+        </div>
+        <!-- Card body -->
+        <div class="card-body">
+          <!-- Form groups used in grid -->
+           <div class="row">
+            <div class="col-md-3">
+                <div class="form-group">
+                <select class="form-control" name="addDepartmentMemberLists" id="addDepartmentMemberLists">
+                  <option>Department Members</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+            <button class="btn btn-primary" name="addDepartmentMember" id="addDepartmentMember" type="submit">Add Member</button>
+          </div>
+        </div>
+         
+            <div class="table-responsive py-4 col-md-7">
+                <table class="table table-flush" id="datatable-basic">
+                  <thead class="thead-light">
+                    <tr>
+                      <th>Department Members</th>
+                      <th>Delete</th>
+                    </tr>
+                  </thead>
+                  <tfoot>
+                    <tr>
+                      <th>Department Members</th>
+                      <th>Delete</th>
+                    </tr>
+                  </tfoot>
+                  <tbody>
+                    <tr>
+                      <td>Department Members</td>
+                      <td>Delete</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+           </div>
+         </div>
+
 
       <!-- Footer -->
       <footer class="footer pt-0">
@@ -487,6 +538,17 @@
   <script src="../../assets/vendor/js-cookie/js.cookie.js"></script>
   <script src="../../assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js"></script>
   <script src="../../assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"></script>
+
+   <!-- Optional JS -->
+  <script src="../../assets/vendor/datatables.net/js/jquery.dataTables.min.js"></script>
+  <script src="../../assets/vendor/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+  <script src="../../assets/vendor/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+  <script src="../../assets/vendor/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js"></script>
+  <script src="../../assets/vendor/datatables.net-buttons/js/buttons.html5.min.js"></script>
+  <script src="../../assets/vendor/datatables.net-buttons/js/buttons.flash.min.js"></script>
+  <script src="../../assets/vendor/datatables.net-buttons/js/buttons.print.min.js"></script>
+  <script src="../../assets/vendor/datatables.net-select/js/dataTables.select.min.js"></script>
+  
   <!-- Argon JS -->
   <script src="../../assets/js/argon.js?v=1.1.0"></script>
   <!-- Demo JS - remove this in your project -->
